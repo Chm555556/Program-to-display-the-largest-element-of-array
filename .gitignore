@@ -1,32 +1,22 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+int n, max;
+cout<<"\n Enter the size of array \n";
+cin>>n;
+int array[]={4,7,8};
+cout<<"\n Enter the array elements";
+for(int i=0;i<n;i++)
+{
+cin>>array[i];
+}
+max=array[0];
+for(i=1;i<n;i++)
+{
+if(max<array[i])
+max=array[i];
+}
+cout<<"Maximum element ="<<max;
+getch();
+}
